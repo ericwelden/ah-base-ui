@@ -13,6 +13,9 @@
 /* Design Tokens - CSS Variables */
 @import './design-tokens.css';
 
+/* Icons - Material Symbols */
+@import './icons.css';
+
 /* Base Styles */
 @import './base-styles.css';
 

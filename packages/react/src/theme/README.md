@@ -5,6 +5,7 @@ This directory contains a comprehensive styling system for Base UI components fo
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [Icons](#icons)
 - [Installation](#installation)
 - [Design Tokens](#design-tokens)
 - [Components](#components)
@@ -36,6 +37,135 @@ The styling system includes:
 - **Font Family**: Inter
 - **Styles**: Display, Headline, Title, Body, Label, Eyebrow
 - **Weights**: Regular (400), Medium (500), Demibold/Bold (600)
+
+### Icons
+
+- **Material Symbols**: Google's icon font with 300 weight
+- **Variants**: Rounded (default) and Outlined
+- **Sizes**: XS to 3XL
+- **2,500+ icons** available including healthcare-specific icons
+
+## Icons
+
+The theme includes **Material Symbols** from Google with 300 weight in both Rounded and Outlined variants.
+
+### Basic Usage
+
+```html
+<!-- Rounded variant (default) -->
+<span class="icon">home</span>
+<span class="icon icon-rounded">settings</span>
+
+<!-- Outlined variant -->
+<span class="icon icon-outlined">favorite</span>
+
+<!-- Different sizes -->
+<span class="icon icon-xs">star</span>      <!-- 14px -->
+<span class="icon icon-sm">star</span>      <!-- 16px -->
+<span class="icon icon-md">star</span>      <!-- 20px - default -->
+<span class="icon icon-lg">star</span>      <!-- 24px -->
+<span class="icon icon-xl">star</span>      <!-- 32px -->
+<span class="icon icon-2xl">star</span>     <!-- 40px -->
+<span class="icon icon-3xl">star</span>     <!-- 48px -->
+```
+
+### Icons in Components
+
+#### Buttons with Icons
+
+```html
+<!-- Icon before text -->
+<button class="btn btn-primary">
+  <span class="icon">download</span>
+  Download
+</button>
+
+<!-- Icon after text -->
+<button class="btn btn-primary">
+  Upload
+  <span class="icon">upload</span>
+</button>
+
+<!-- Icon-only button -->
+<button class="btn btn-primary btn-icon-only">
+  <span class="icon">add</span>
+</button>
+```
+
+#### Form Inputs with Icons
+
+```html
+<div style="position: relative;">
+  <input type="text" class="input" placeholder="Search..." style="padding-left: 2.5rem;" />
+  <span class="icon" style="position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--color-neutral-500);">
+    search
+  </span>
+</div>
+```
+
+#### Menu Items with Icons
+
+```html
+<button class="menu-item">
+  <span class="icon menu-item-icon">home</span>
+  Home
+</button>
+```
+
+#### Navigation Items with Icons
+
+```html
+<a href="#" class="sidebar-nav-item">
+  <span class="icon sidebar-nav-item-icon">dashboard</span>
+  Dashboard
+</a>
+```
+
+### Common Icons
+
+The theme includes helper classes for frequently used icons:
+
+```html
+<span class="icon icon-menu"></span>        <!-- menu -->
+<span class="icon icon-close"></span>       <!-- close -->
+<span class="icon icon-check"></span>       <!-- check -->
+<span class="icon icon-add"></span>         <!-- add -->
+<span class="icon icon-edit"></span>        <!-- edit -->
+<span class="icon icon-delete"></span>      <!-- delete -->
+<span class="icon icon-search"></span>      <!-- search -->
+<span class="icon icon-settings"></span>    <!-- settings -->
+<span class="icon icon-home"></span>        <!-- home -->
+<span class="icon icon-person"></span>      <!-- person -->
+<span class="icon icon-notifications"></span> <!-- notifications -->
+<span class="icon icon-mail"></span>        <!-- mail -->
+<span class="icon icon-calendar"></span>    <!-- calendar_today -->
+<span class="icon icon-download"></span>    <!-- download -->
+<span class="icon icon-upload"></span>      <!-- upload -->
+<span class="icon icon-share"></span>       <!-- share -->
+```
+
+### Healthcare-Specific Icons
+
+```html
+<span class="icon icon-medical"></span>     <!-- medical_services -->
+<span class="icon icon-health"></span>      <!-- health_and_safety -->
+<span class="icon icon-medication"></span>  <!-- medication -->
+<span class="icon icon-emergency"></span>   <!-- emergency -->
+<span class="icon icon-accessible"></span>  <!-- accessible -->
+<span class="icon icon-elderly"></span>     <!-- elderly -->
+<span class="icon icon-bed"></span>         <!-- bed -->
+<span class="icon icon-vital-signs"></span> <!-- vital_signs -->
+```
+
+### Finding More Icons
+
+Browse all available icons at:
+- **Material Symbols**: https://fonts.google.com/icons
+
+Simply use the icon name as the content:
+```html
+<span class="icon">icon_name_here</span>
+```
 
 ## Installation
 
