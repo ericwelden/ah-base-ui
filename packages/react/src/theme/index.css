@@ -1,0 +1,24 @@
+/**
+ * Design System 2.0 - Complete Theme
+ * Main entry point for all brand styles
+ *
+ * Usage:
+ * Import this file in your application to apply all brand styles:
+ *
+ * import '@base-ui-components/react/theme';
+ * // or
+ * import '@base-ui-components/react/theme/index.css';
+ */
+
+/* Design Tokens - CSS Variables */
+@import './design-tokens.css';
+
+/* Base Styles */
+@import './base-styles.css';
+
+/* Component Styles */
+@import './components/button.css';
+@import './components/forms.css';
+@import './components/navigation.css';
+@import './components/dialog.css';
+@import './components/misc.css';

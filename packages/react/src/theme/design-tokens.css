@@ -1,0 +1,245 @@
+/**
+ * Design System 2.0 - Design Tokens
+ * Brand style guidelines as CSS custom properties
+ */
+
+:root {
+  /* ========================================
+     COLOR PALETTE
+     ======================================== */
+
+  /* Primary - Blue */
+  --color-primary-50: #E8EEFF;
+  --color-primary-100: #C7D6FF;
+  --color-primary-200: #A3BEFF;
+  --color-primary-300: #7EA6FF;
+  --color-primary-400: #5E8FFF;
+  --color-primary-500: #3D78FF;
+  --color-primary-600: #2461FF;
+  --color-primary-700: #0047FF;
+  --color-primary-800: #003AD6;
+  --color-primary-900: #002D99;
+
+  /* Neutral - Gray */
+  --color-neutral-50: #F5F5F5;
+  --color-neutral-100: #E0E0E0;
+  --color-neutral-200: #CCCCCC;
+  --color-neutral-300: #B3B3B3;
+  --color-neutral-400: #999999;
+  --color-neutral-500: #808080;
+  --color-neutral-600: #666666;
+  --color-neutral-700: #4D4D4D;
+  --color-neutral-800: #333333;
+  --color-neutral-900: #1A1A1A;
+
+  /* Surface - Beige */
+  --color-surface-0: #FFFFFF;
+  --color-surface-100: #F8F8F5;
+  --color-surface-200: #F0F0EB;
+  --color-surface-300: #E8E8E0;
+  --color-surface-400: #E0E0D6;
+  --color-surface-500: #D8D8CC;
+
+  /* Semantic - Error/Warning (Orange/Red) */
+  --color-error-50: #FFE8E5;
+  --color-error-100: #FFCCC5;
+  --color-error-300: #FF8A75;
+  --color-error-600: #FF4D2E;
+  --color-error-700: #FF3014;
+  --color-error-800: #E02000;
+
+  /* Semantic - Info (Purple) */
+  --color-info-50: #F0E5FF;
+  --color-info-100: #DBCCFF;
+  --color-info-300: #B38AFF;
+  --color-info-600: #8A4DFF;
+  --color-info-700: #7530FF;
+  --color-info-800: #6014E0;
+
+  /* Semantic - Success (Green) */
+  --color-success-50: #E5F5E5;
+  --color-success-100: #CCEBCC;
+  --color-success-200: #A3DDA3;
+  --color-success-300: #75CC75;
+  --color-success-600: #47B347;
+  --color-success-700: #339933;
+  --color-success-800: #2E8A2E;
+
+  /* Semantic - Warning (Yellow) */
+  --color-warning-50: #FFF8E5;
+  --color-warning-100: #FFF0CC;
+  --color-warning-200: #FFE8A3;
+  --color-warning-300: #FFDB75;
+  --color-warning-600: #FFC61F;
+  --color-warning-700: #FFB800;
+  --color-warning-800: #E0A300;
+
+  /* Semantic - Progress/Danger (Pink/Red) */
+  --color-danger-50: #FFE5F0;
+  --color-danger-100: #FFCCE0;
+  --color-danger-200: #FFA3C7;
+  --color-danger-300: #FF75AD;
+  --color-danger-600: #FF1F7A;
+  --color-danger-700: #E00061;
+  --color-danger-800: #C7004F;
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+
+  /* Font Family */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+
+  /* Font Sizes */
+  --font-size-display-large: 3.5625rem; /* 57px */
+  --font-size-display-medium: 2.8125rem; /* 45px */
+  --font-size-display-small: 2.25rem; /* 36px */
+  --font-size-headline-large: 2rem; /* 32px */
+  --font-size-headline-medium: 1.75rem; /* 28px */
+  --font-size-headline-small: 1.5rem; /* 24px */
+  --font-size-title-large: 1.375rem; /* 22px */
+  --font-size-title-medium: 1rem; /* 16px */
+  --font-size-title-small: 0.875rem; /* 14px */
+  --font-size-label-large: 0.875rem; /* 14px */
+  --font-size-label-medium: 0.75rem; /* 12px */
+  --font-size-label-small: 0.6875rem; /* 11px */
+  --font-size-body-large: 1rem; /* 16px */
+  --font-size-body-medium: 0.875rem; /* 14px */
+  --font-size-body-small: 0.75rem; /* 12px */
+  --font-size-eyebrow-large: 0.75rem; /* 12px */
+  --font-size-eyebrow-small: 0.625rem; /* 10px */
+
+  /* Line Heights */
+  --line-height-display-large: 4rem; /* 64px */
+  --line-height-display-medium: 3.25rem; /* 52px */
+  --line-height-display-small: 2.75rem; /* 44px */
+  --line-height-headline-large: 2.5rem; /* 40px */
+  --line-height-headline-medium: 2.25rem; /* 36px */
+  --line-height-headline-small: 2rem; /* 32px */
+  --line-height-title-large: 1.75rem; /* 28px */
+  --line-height-title-medium: 1.5rem; /* 24px */
+  --line-height-title-small: 1.25rem; /* 20px */
+  --line-height-label-large: 1.25rem; /* 20px */
+  --line-height-label-medium: 1rem; /* 16px */
+  --line-height-label-small: 1rem; /* 16px */
+  --line-height-body-large: 1.5rem; /* 24px */
+  --line-height-body-medium: 1.25rem; /* 20px */
+  --line-height-body-small: 1rem; /* 16px */
+  --line-height-eyebrow-large: 1.25rem; /* 20px */
+  --line-height-eyebrow-small: 1rem; /* 16px */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-demibold: 600;
+  --font-weight-bold: 600;
+
+  /* ========================================
+     SPACING
+     ======================================== */
+
+  --spacing-0: 0;
+  --spacing-1: 0.25rem; /* 4px */
+  --spacing-2: 0.5rem; /* 8px */
+  --spacing-3: 0.75rem; /* 12px */
+  --spacing-4: 1rem; /* 16px */
+  --spacing-5: 1.25rem; /* 20px */
+  --spacing-6: 1.5rem; /* 24px */
+  --spacing-8: 2rem; /* 32px */
+  --spacing-10: 2.5rem; /* 40px */
+  --spacing-12: 3rem; /* 48px */
+  --spacing-16: 4rem; /* 64px */
+  --spacing-20: 5rem; /* 80px */
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+  --radius-2xl: 1.5rem; /* 24px */
+  --radius-full: 9999px;
+
+  /* ========================================
+     SHADOWS / ELEVATION
+     ======================================== */
+
+  /* 2D Elevation */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  /* 3D Elevation */
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-3xl: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+
+  /* ========================================
+     TRANSITIONS
+     ======================================== */
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slower: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========================================
+     Z-INDEX
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-fixed: 1200;
+  --z-modal-backdrop: 1300;
+  --z-modal: 1400;
+  --z-popover: 1500;
+  --z-tooltip: 1600;
+
+  /* ========================================
+     COMPONENT-SPECIFIC TOKENS
+     ======================================== */
+
+  /* Button */
+  --button-padding-x-sm: var(--spacing-3);
+  --button-padding-y-sm: var(--spacing-2);
+  --button-padding-x-md: var(--spacing-4);
+  --button-padding-y-md: var(--spacing-2);
+  --button-padding-x-lg: var(--spacing-6);
+  --button-padding-y-lg: var(--spacing-3);
+  --button-font-size-sm: var(--font-size-label-small);
+  --button-font-size-md: var(--font-size-label-large);
+  --button-font-size-lg: var(--font-size-title-medium);
+  --button-border-radius: var(--radius-lg);
+  --button-font-weight: var(--font-weight-medium);
+
+  /* Input */
+  --input-padding-x: var(--spacing-3);
+  --input-padding-y: var(--spacing-2);
+  --input-font-size: var(--font-size-body-medium);
+  --input-border-radius: var(--radius-md);
+  --input-border-width: 1px;
+  --input-border-color: var(--color-neutral-300);
+  --input-border-color-focus: var(--color-primary-500);
+  --input-background: var(--color-surface-0);
+
+  /* Checkbox/Radio */
+  --checkbox-size: 1.25rem; /* 20px */
+  --checkbox-border-radius: var(--radius-sm);
+  --checkbox-border-width: 2px;
+  --checkbox-border-color: var(--color-neutral-400);
+  --checkbox-checked-background: var(--color-primary-500);
+  --checkbox-checked-border-color: var(--color-primary-500);
+
+  /* Menu/Navigation */
+  --menu-item-padding-x: var(--spacing-3);
+  --menu-item-padding-y: var(--spacing-2);
+  --menu-item-border-radius: var(--radius-md);
+  --menu-item-background-hover: var(--color-surface-100);
+  --menu-item-background-active: var(--color-surface-200);
+  --menu-item-font-size: var(--font-size-body-medium);
+}

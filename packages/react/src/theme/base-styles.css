@@ -1,0 +1,197 @@
+/**
+ * Base Component Styles
+ * Global styles and resets following brand guidelines
+ */
+
+@import './design-tokens.css';
+
+/* ========================================
+   GLOBAL RESETS & BASE STYLES
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-medium);
+  line-height: var(--line-height-body-medium);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-neutral-900);
+  background-color: var(--color-surface-0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   TYPOGRAPHY UTILITIES
+   ======================================== */
+
+.text-display-large {
+  font-size: var(--font-size-display-large);
+  line-height: var(--line-height-display-large);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-display-medium {
+  font-size: var(--font-size-display-medium);
+  line-height: var(--line-height-display-medium);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-display-small {
+  font-size: var(--font-size-display-small);
+  line-height: var(--line-height-display-small);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-headline-large {
+  font-size: var(--font-size-headline-large);
+  line-height: var(--line-height-headline-large);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-headline-medium {
+  font-size: var(--font-size-headline-medium);
+  line-height: var(--line-height-headline-medium);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-headline-small {
+  font-size: var(--font-size-headline-small);
+  line-height: var(--line-height-headline-small);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-title-large {
+  font-size: var(--font-size-title-large);
+  line-height: var(--line-height-title-large);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-title-medium {
+  font-size: var(--font-size-title-medium);
+  line-height: var(--line-height-title-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-title-small {
+  font-size: var(--font-size-title-small);
+  line-height: var(--line-height-title-small);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-body-large {
+  font-size: var(--font-size-body-large);
+  line-height: var(--line-height-body-large);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-body-medium {
+  font-size: var(--font-size-body-medium);
+  line-height: var(--line-height-body-medium);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-body-small {
+  font-size: var(--font-size-body-small);
+  line-height: var(--line-height-body-small);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-label-large {
+  font-size: var(--font-size-label-large);
+  line-height: var(--line-height-label-large);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-label-medium {
+  font-size: var(--font-size-label-medium);
+  line-height: var(--line-height-label-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-label-small {
+  font-size: var(--font-size-label-small);
+  line-height: var(--line-height-label-small);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-emphasis {
+  font-weight: var(--font-weight-demibold);
+}
+
+/* ========================================
+   FOCUS STYLES
+   ======================================== */
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ========================================
+   DISABLED STATE
+   ======================================== */
+
+[disabled],
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+/* ========================================
+   SURFACE UTILITIES
+   ======================================== */
+
+.surface-0 {
+  background-color: var(--color-surface-0);
+}
+
+.surface-100 {
+  background-color: var(--color-surface-100);
+}
+
+.surface-200 {
+  background-color: var(--color-surface-200);
+}
+
+/* ========================================
+   ELEVATION UTILITIES
+   ======================================== */
+
+.elevation-xs {
+  box-shadow: var(--shadow-xs);
+}
+
+.elevation-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.elevation-md {
+  box-shadow: var(--shadow-md);
+}
+
+.elevation-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+.elevation-xl {
+  box-shadow: var(--shadow-xl);
+}
+
+.elevation-2xl {
+  box-shadow: var(--shadow-2xl);
+}
+
+.elevation-3xl {
+  box-shadow: var(--shadow-3xl);
+}
